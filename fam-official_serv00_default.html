@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAMOFC's Tool Page</title>
+    <link rel="icon" href="./script12/fampng/faheem.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1e3c72;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .background-art {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #2a5298, #6e8efb);
+            overflow: hidden;
+        }
+        .background-art::before,
+        .background-art::after {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 70%);
+            opacity: 0.5;
+            animation: wave 15s infinite linear;
+        }
+        .background-art::after {
+            animation-delay: -7.5s;
+            opacity: 0.3;
+            background: radial-gradient(circle, rgba(167, 119, 227, 0.3), transparent 70%);
+        }
+        @keyframes wave {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+        .container {
+            text-align: center;
+            background: transparent;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
+        }
+        .header-gif {
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 10px;
+        }
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+            min-width: 100px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .button i {
+            font-size: 1.4rem;
+            margin-bottom: 6px;
+            transition: transform 0.3s ease;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .button:hover i {
+            transform: scale(1.2);
+        }
+        .simple-tool {
+            background: linear-gradient(45deg, #28a745, #34c759);
+        }
+        .vip-tool {
+            background: linear-gradient(45deg, #ffc107, #ffca28);
+        }
+        .whatsapp {
+            background: linear-gradient(45deg, #25D366, #2ecc71);
+        }
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
+        }
+        .button:hover::before {
+            left: 0;
+        }
+        @media (max-width: 480px) {
+            .button {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+                min-width: 80px;
+            }
+            .button i {
+                font-size: 1.2rem;
+                margin-bottom: 5px;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            .button-container {
+                gap: 8px;
+            }
+            .container {
+                padding: 20px;
+            }
+            .background-art::before,
+            .background-art::after {
+                width: 150%;
+                height: 150%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-art"></div>
+    <div class="container">
+        <img src="./l/giphy.gif" alt="Welcome GIF" class="header-gif">
+        <h2>FAMOFC TOOLS</h2>
+        <div class="button-container">
+            <a href="https://famofc-tool.vercel.app/" class="button simple-tool"><i class="fas fa-tools"></i> Simple Tool</a>
+            <a href="viptool.php" class="button vip-tool"><i class="fas fa-crown"></i> VIP Tool</a>
+            <a href="https://whatsapp.com/channel/0029Vb2pMIt1NCrUCy9Q0f3C" class="button whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Channel</a>
+        </div>
+    </div>
+</body>
+</html>
