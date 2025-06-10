@@ -1,6 +1,0 @@
-{
-    "status": "error",
-    "message": "Invalid request: Please provide a mobile number via ?num=",
-    "data": [],
-    "developer": "famofc"
-}
