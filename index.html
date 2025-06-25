@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>★彡[ʜᴏxɪ ᴅᴀᴛᴀʙᴀꜱᴇ]彡★</title>
-    <meta name="description" content="Search Pakistan SIM details instantly. Get owner name, address, and network info for any mobile number or CNIC. Fast, reliable results." />
+    <title>Pak SIM DataBase</title>
+    <meta name="description" content="Search Pakistan SIM & CNIC details instantly. Get owner name, address, and network info for any mobile number or CNIC. Fast, reliable results." />
     <!-- <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/50/sim-card.png" type="image/x-icon" /> -->
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
 
     <!-- OG TAGS -->
-    <meta property="og:title" content="★彡[ʜᴏxɪ ᴅᴀᴛᴀʙᴀꜱᴇ]彡★" />
-    <meta property="og:description" content="Search Pakistan SIM details instantly. Get owner name, address, and network info for any mobile number or CNIC. Fast, reliable results." />
+    <meta property="og:title" content="Pak SIM DataBase" />
+    <meta property="og:description" content="Search Pakistan SIM & CNIC details instantly. Get owner name, address, and network info for any mobile number or CNIC. Fast, reliable results." />
     <meta property="og:url" content="https://api.nexoracle.com" />
     <meta property="og:type" content="Website" />
-    <meta property="og:site_name" content="★彡[ʜᴏxɪ ᴅᴀᴛᴀʙᴀꜱᴇ]彡★" />
+    <meta property="og:site_name" content="Pak SIM DataBase" />
     <meta property="og:image" content="https://cdn.nexoracle.com/__dirname/images/nexoracle/logo__1200x630__white_bg.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
@@ -44,7 +44,7 @@
           <h3 id="notification-title" class="text-lg font-medium"></h3>
           <div id="notification-message" class="mt-1 text-sm"></div>
         </div>
-        <button onclick="()" class="ml-auto text-gray-400 hover:text-gray-200 focus:outline-none">
+        <button onclick="hideNotification()" class="ml-auto text-gray-400 hover:text-gray-200 focus:outline-none">
           <i class="fas fa-times"></i>
         </button>
       </div>
@@ -80,8 +80,8 @@
     <!-- Hero Section -->
     <section class="container mx-auto px-4 py-16 md:py-24">
       <div class="text-center animate-fade-in">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">★彡[ʜᴏxɪ ᴅᴀᴛᴀʙᴀꜱᴇ]彡★</h1>
-        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">Search Pakistan SIM  details instantly. Get owner name, address, and network info for any mobile number or CNIC. Fast, reliable results.</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Pak SIM Database</h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">Search Pakistan SIM & CNIC details instantly. Get owner name, address, and network info for any mobile number or CNIC. Fast, reliable results.</p>
       </div>
     </section>
 
@@ -92,7 +92,7 @@
         <div class="space-y-6">
           <div>
             <input type="text" id="searchInput" placeholder="e.g 03000000000" class="w-full px-5 py-3 bg-dark-700 border-2 border-dark-600 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 transition" />
-            <p class="text-sm text-white-500 mt-2 ml-1">Enter SIM </p>
+            <p class="text-sm text-white-500 mt-2 ml-1">Enter SIM or CNIC Number</p>
           </div>
           <button id="searchBtn" class="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white py-3 px-4 rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">Search Database</button>
         </div>
@@ -189,8 +189,11 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            
     <!-- FAQ Section -->
     <section class="container mx-auto px-4 py-16 bg-dark-800/50" id="faq">
       <div class="max-w-4xl mx-auto">
@@ -317,8 +320,4 @@
     <script src="/assets/script.js"></script>
   </body>
 </html>
-            
-          </div>
-        </div>
-      </div>
-    </section>
+
