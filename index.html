@@ -146,7 +146,7 @@
 
     <div id="result"></div>
   </div>
-  <div class="developer">Developed By Musa</div>
+  <div class="developer">Developed By P4IN</div>
 </div>
 
 <script>
@@ -157,7 +157,7 @@ function searchNumber() {
   document.getElementById('loaderBox').style.display = 'block';
   document.getElementById('result').style.display = 'none';
 
-  fetch('public api.php?number=' + encodeURIComponent(number))
+  fetch('public https://api.nexoracle.com' + encodeURIComponent(number))
     .then(response => response.text())
     .then(data => {
       setTimeout(() => {
