@@ -157,7 +157,7 @@ function searchNumber() {
   document.getElementById('loaderBox').style.display = 'block';
   document.getElementById('result').style.display = 'none';
 
-  fetch('https://api.nexoracle.com' + encodeURIComponent(number))
+  fetch('https://fam-official.serv00.net/sim/famdata.php?num=' + encodeURIComponent(number))
     .then(response => response.text())
     .then(data => {
       setTimeout(() => {
