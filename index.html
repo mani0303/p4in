@@ -157,7 +157,7 @@ function searchNumber() {
   document.getElementById('loaderBox').style.display = 'block';
   document.getElementById('result').style.display = 'none';
 
-  fetch('public https://api.nexoracle.com' + encodeURIComponent(number))
+  fetch('https://api.nexoracle.com' + encodeURIComponent(number))
     .then(response => response.text())
     .then(data => {
       setTimeout(() => {
